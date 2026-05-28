@@ -1,107 +1,220 @@
-<!doctype html>
-<!-- coffee · warm-cafe · hero-layout 0 · svc-layout 0 · generated from live Google Places data for Favorite Coffee Museum -->
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Favorite Coffee Museum — Coffee Shop, Whittier</title>
-<meta name="description" content="Favorite Coffee Museum — Coffee Shop in Whittier.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<!-- coffee · editorial-museum · hero-layout 2 · svc-layout 2 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Favorite Coffee Museum — Whittier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,800;1,400;1,800&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f3e7d5;--surface:#fff7ea;--ink:#2a1a0e;--mut:#7a5d44;--acc:#5a7a3f;--line:#dec8a8}
+:root{
+  --bg:#f6f3eb;
+  --paper:#ece6d6;
+  --ink:#1f1e1b;
+  --mute:#736d5e;
+  --sage:#6b7e5d;
+  --brass:#a8854a;
+  --rule:#1f1e1b;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased}
-.disp{font-family:'Cormorant Garamond',serif}
-a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-img{max-width:100%;display:block}
-.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
-header{padding:16px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:30}
-header .row{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:21px;letter-spacing:-.01em;color:var(--ink)}
-nav a{margin-left:20px;color:var(--mut);font-size:13.5px;font-weight:500}nav a:hover{color:var(--acc);text-decoration:none}
-.callbtn{display:inline-flex;align-items:center;gap:7px;background:var(--acc);color:#fff;padding:9px 16px;border-radius:8px;font-weight:600;font-size:13.5px;margin-left:20px}
-.callbtn:hover{filter:brightness(.92);text-decoration:none;color:#fff}
-.hero{padding:72px 0 60px}
-.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
-.kicker{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:18px}
-h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(40px,6.2vw,72px);line-height:1.02;letter-spacing:-.025em;margin-bottom:20px}
-.lede{font-size:18px;color:var(--mut);max-width:480px;margin-bottom:28px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:8px;font-weight:600;font-size:14px;border:1.5px solid var(--ink);color:var(--ink);background:transparent}
-.btn:hover{background:var(--ink);color:var(--bg);text-decoration:none}
-.btn.solid{background:var(--acc);border-color:var(--acc);color:#fff}
-.btn.solid:hover{filter:brightness(.92);color:#fff}
-.hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;;}
-.section{padding:62px 0;border-top:1px solid var(--line)}
-.kick{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
-h2{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
+html,body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;font-weight:400;line-height:1.55;-webkit-font-smoothing:antialiased}
+.fr{font-family:'Fraunces',serif}
+.wrap{max-width:1280px;margin:0 auto;padding:0 36px}
 
-.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
-.svcs .svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
-.svc-rows{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
-.svc-rows .svc-row{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 26px;display:flex;align-items:baseline;gap:14px}
-.svc-list{margin-top:30px;border-top:1px solid var(--line)}
-.svc-list .svc-line{display:flex;align-items:baseline;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
-.snum{font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--acc);font-weight:600;letter-spacing:.08em}
-.svcs .svc h3,.svc-rows .svc-row h3,.svc-list .svc-line h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:19px;margin-top:10px;letter-spacing:-.01em}
+/* gazette nav */
+nav{padding:20px 0;border-bottom:2px solid var(--rule);background:var(--paper)}
+nav .row{display:flex;align-items:center;justify-content:space-between}
+.dateline{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:var(--mute)}
+.brand{font-family:'Fraunces',serif;font-weight:800;font-size:38px;letter-spacing:-1px;text-align:center}
+.brand small{display:block;font-style:italic;font-weight:300;font-size:11px;letter-spacing:6px;color:var(--brass);margin-top:4px}
+.callbtn{font-family:'Fraunces',serif;font-style:italic;font-size:14px;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--brass)}
+.subnav{padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--paper);text-align:center;font-family:'Fraunces',serif;font-style:italic;font-size:13px;letter-spacing:1px;color:var(--mute)}
+.subnav span{margin:0 18px}
+.subnav b{font-weight:800;font-style:normal;color:var(--ink)}
 
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
-.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
-.q p{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;margin-bottom:12px}
-.q .who{font-size:13px;font-weight:600;color:var(--acc)}
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:28px}
-.visit .info{padding:30px 32px;background:var(--surface)}
-.hrow{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-.hrow:last-child{border-bottom:0}.hd{font-weight:600}.ht{color:var(--mut)}
-.visit iframe{width:100%;height:100%;min-height:360px;border:0}
-.contact-line{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-footer{background:var(--ink);color:var(--bg);padding:32px 0 46px;border-top:1px solid var(--line)}
-footer .fbrand{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:18px}
-footer .credit{margin-top:10px;font-size:13px;opacity:.82}footer a{color:var(--acc)}
-@media(max-width:800px){.hero .grid{grid-template-columns:1fr}.hero-img{order:0;aspect-ratio:16/10}.svcs{grid-template-columns:1fr 1fr}.svc-rows{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.quotes,.visit{grid-template-columns:1fr}nav{display:none}.visit iframe{min-height:280px}}
-</style></head><body>
-<header><div class="wrap row">
-  <div class="brand">Favorite Coffee Museum</div>
-  <div style="display:flex;align-items:center"><nav><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav><a class="callbtn" href="tel:+15624565108">Call (562) 456-5108</a></div>
+/* hero — front-page broadsheet */
+.front{padding:60px 0 50px}
+.kicker{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:var(--brass);letter-spacing:2px;text-transform:uppercase;text-align:center}
+.head1{font-family:'Fraunces',serif;font-weight:800;font-size:clamp(60px,9vw,128px);line-height:.92;letter-spacing:-3px;text-align:center;margin-top:16px}
+.head1 em{font-style:italic;color:var(--sage)}
+.deck{max-width:780px;margin:24px auto 0;text-align:center;font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:22px;color:#3d3a32;line-height:1.5}
+
+/* photo + caption */
+.feature-img{margin-top:50px;height:480px;background:#999 center/cover no-repeat;border-bottom:1px solid var(--rule)}
+.caption{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:var(--mute);text-align:center;padding:10px 0;border-bottom:2px solid var(--rule)}
+.caption b{font-style:normal;font-weight:500;color:var(--ink)}
+
+/* two-column editorial */
+.feature{padding:70px 0;border-bottom:1px solid var(--rule)}
+.feature .top{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.feature h2{font-family:'Fraunces',serif;font-weight:800;font-size:54px;line-height:1;letter-spacing:-1px}
+.feature h2 em{font-style:italic;color:var(--brass)}
+.byline{font-family:'Fraunces',serif;font-style:italic;font-size:14px;color:var(--mute);margin-top:18px}
+.cols{column-count:2;column-gap:36px;margin-top:30px;font-size:16px;color:#2f2e2a;line-height:1.7}
+.cols p{margin-bottom:14px}
+.cols p:first-child::first-letter{font-family:'Fraunces',serif;font-weight:800;font-size:68px;float:left;line-height:.85;padding:6px 8px 0 0;color:var(--sage)}
+
+/* drinks grid as museum exhibits */
+.exhibits{padding:80px 0;border-bottom:2px solid var(--rule);background:var(--paper)}
+.exhibits .lbl{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:var(--brass);letter-spacing:2px;text-transform:uppercase;text-align:center}
+.exhibits h2{font-family:'Fraunces',serif;font-weight:800;font-size:56px;text-align:center;letter-spacing:-1px;margin-top:12px}
+.exhibits .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:50px}
+.exhibit{background:var(--bg);padding:26px 22px;border:1px solid var(--rule);position:relative}
+.tag{position:absolute;top:-12px;left:18px;background:var(--bg);padding:2px 10px;font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:var(--brass);border:1px solid var(--rule)}
+.exhibit h3{font-family:'Fraunces',serif;font-weight:800;font-size:22px;margin-top:8px;letter-spacing:-.3px}
+.exhibit .price{font-family:'Fraunces',serif;font-size:16px;color:var(--sage);font-weight:500;margin-top:8px}
+.exhibit p{font-size:14px;color:#4a4842;margin-top:12px;line-height:1.6}
+
+/* reviews — letters to the editor */
+.letters{padding:80px 0;border-bottom:2px solid var(--rule)}
+.letters h2{font-family:'Fraunces',serif;font-weight:800;font-size:56px;text-align:center;letter-spacing:-1px}
+.letters .sub{font-family:'Fraunces',serif;font-style:italic;font-size:16px;color:var(--mute);text-align:center;margin-top:10px}
+.letterscol{column-count:3;column-gap:40px;margin-top:60px}
+.letter{break-inside:avoid;margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid var(--mute)}
+.letter .star{color:var(--brass);font-family:'Fraunces',serif;font-size:18px;letter-spacing:3px}
+.letter h4{font-family:'Fraunces',serif;font-weight:800;font-size:20px;margin-top:8px;letter-spacing:-.3px}
+.letter p{font-size:15px;color:#2f2e2a;margin-top:10px;line-height:1.65}
+.letter .sign{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:var(--mute);margin-top:12px}
+
+/* visit */
+.visit{padding:80px 0;background:var(--paper);border-bottom:2px solid var(--rule)}
+.visit h2{font-family:'Fraunces',serif;font-weight:800;font-size:56px;text-align:center;letter-spacing:-1px}
+.visit .lbl{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:var(--brass);letter-spacing:2px;text-transform:uppercase;text-align:center;margin-bottom:12px}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:50px}
+.vcard{background:var(--bg);padding:30px;border:1px solid var(--rule)}
+.vcard h3{font-family:'Fraunces',serif;font-weight:800;font-size:26px;letter-spacing:-.5px}
+.vcard h3 em{font-style:italic;color:var(--sage);font-size:18px;display:block;margin-bottom:6px;letter-spacing:0;font-weight:500}
+.vcard .body{margin-top:18px;font-size:15px;color:#2f2e2a;line-height:1.7}
+.vcard .body b{display:block;font-family:'Fraunces',serif;font-style:italic;font-weight:500;color:var(--mute);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-top:10px}
+.vcard a{color:var(--brass);text-decoration:none;font-weight:500}
+
+/* footer */
+footer{padding:60px 0;text-align:center;background:var(--ink);color:var(--paper)}
+footer .b{font-family:'Fraunces',serif;font-weight:800;font-size:36px;letter-spacing:-1px}
+footer .b em{font-style:italic;color:var(--brass)}
+footer .lbl{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:var(--brass);margin-top:8px}
+footer a{color:#d6c79b;text-decoration:underline}
+footer .credit{margin-top:36px;padding-top:24px;border-top:1px solid #3a3833;font-size:12px;color:#a8a39a}
+
+@media (max-width:880px){
+  .feature .top{grid-template-columns:1fr;gap:24px}
+  .cols{column-count:1}
+  .exhibits .grid{grid-template-columns:1fr 1fr}
+  .letterscol{column-count:1}
+  .vgrid{grid-template-columns:1fr}
+  .feature-img{height:280px}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap row">
+  <div class="dateline">Vol. I · Whittier, CA · Daily</div>
+  <div class="brand">FAVORITE COFFEE MUSEUM<small>· A NEIGHBORHOOD JOURNAL OF SLOW BREWS ·</small></div>
+  <a class="callbtn" href="tel:+15624565108">(562) 456‑5108</a>
+</div></nav>
+
+<div class="subnav"><div class="wrap">
+  <span>Open <b>Daily</b></span> · <span><b>6:30 AM</b> Weekdays</span> · <span><b>5:00 PM</b> Close</span> · <span>Behind Pho‑Ology, facing Norwalk</span>
+</div></div>
+
+<header class="front"><div class="wrap">
+  <div class="kicker">— A Soft-Opening Dispatch —</div>
+  <h1 class="head1">A coffee shop, <em>quietly</em><br>arranged like a gallery.</h1>
+  <p class="deck">Warm woods, a piano-laden soundtrack, and a thoughtfully curated menu welcome you into Whittier's most beautifully crafted neighborhood café. Step in. Linger.</p>
 </div></header>
 
-<section class="hero"><div class="wrap"><div class="grid">
-  <div>
-    <span class="kicker">A very good cup</span>
-    <h1 class="disp">Your neighborhood<br>coffee, done right.</h1>
-    <p class="lede">A neighborhood coffee shop that's earned its regulars the honest way — by being good at what it does. Here's everything you need to find us, reach us, and stop by.</p>
-    <div class="cta"><a class="btn solid" href="tel:+15624565108">Call (562) 456-5108</a><a class="btn" href="#visit">Hours &amp; location</a></div>
-  </div>
-  <img class="hero-img" src="https://lh3.googleusercontent.com/place-photos/AJRVUZOm_YA_fNKWhFbyS06dABwgVvZiObPFUasUPsBG3GpT01c20nfNV5R_UyLV_EAfQfCWy-6qFeH8ItyBbrjdbJ0XnESwgrRDVikHi8s_EjlqYwnvMoJtVqcwjgbV1ueudd25GMyA2aQUHK3D_XOVSsqs9A=s4800-w1600" alt="Favorite Coffee Museum">
-</div></div></section>
+<div class="feature-img" style="background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZOm_YA_fNKWhFbyS06dABwgVvZiObPFUasUPsBG3GpT01c20=s1400')"></div>
+<div class="caption"><b>Above:</b> the room at golden hour — Norwalk Blvd entrance, just behind Pho-Ology.</div>
 
-<section class="section" id="services"><div class="wrap">
-  <div class="kick">A very good cup</div>
-  <h2>What we do.</h2>
-  <div class="svcs"><div class="svc"><span class="snum">01</span><h3>Espresso &amp; pour-overs</h3></div><div class="svc"><span class="snum">02</span><h3>Fresh-roast drip</h3></div><div class="svc"><span class="snum">03</span><h3>Matcha &amp; specialty</h3></div><div class="svc"><span class="snum">04</span><h3>Pastries daily</h3></div></div>
-</div></section>
-
-<section class="section gal-sec"><div class="wrap"><div class="kick">A look inside</div><h2>The place itself.</h2><div class="gallery"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNoSBAjNjLyglAYbvPnRk2I8BBrwy_AT3kr0BrwNit40NPGLYIbdd3iccjIj1xSWedaoqdbtA2bxxBCwDHktovPMoiBdQi3Ai2QemTlcI24SAXJ2wbqsWOZcWoXhLS0L3JJ71CsrUzHuZTdLOeF6cvyuA=s4800-w1600" alt="Favorite Coffee Museum" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZM4Ky5VJPKiLvzt4mcbzVEW1blRFmqRLz4GwcZlSaegvUECjB3hmooIUwHH0vPEz7buE4mf9JT9-GXcRv0l_DMSIqVZQHAvUVw-U-4YM4vq_mOrWPzsLQKgZi_Y6NEnR87MjjTdeU1zfg6hkX_oPbwMwQ=s4800-w1600" alt="Favorite Coffee Museum" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNPAa1zLRkYTHMLEsqVD73br9DkTVsTOMvZHuDaGxSAWRrhnQl8i5uy6U24pDPWsTf--FoQ3AII9i_CnE0EcMEwMMT8vyuoImgMBhfvF4pRZfY5CBwxUgpAVy2I-MD54W-LA4sHa_utJJ0H7zcOXmx4eQ=s4800-w1600" alt="Favorite Coffee Museum" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZP0dH3ZVJxzCrva6KHQwHBZNYzMPM-3nY1HcP3B7QHBIMjMEJmtHpJTOkYf6k4PCFMOmZI21U-awXr4FcJMW8l-DsWHXqz0ro1LtjrYSyWpJae0Jbo-3EIL19tn7z_dicHTVSatQ66iwIXCa-L8UEw-Rw=s4800-w1600" alt="Favorite Coffee Museum" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPw1EWzR6Y2P-OfIQSOi9QsRGLaLPjzIcY0THd8d-EylN32n6uIW7odGq0750z5FpIRZ6fhspJ7_MKYj2t6ab5rsmBrX8doYjIp4WXofEuNHQBUL1zXZ6R8rsCb7vXYMu6VyNMPqyMxKfGXDq-jVoHeXQ=s4800-w1600" alt="Favorite Coffee Museum" loading="lazy"></div></div></section>
-<section class="section"><div class="wrap"><div class="kick">In their words</div><h2>What people say.</h2><div class="quotes"><div class="q"><p>I like the view when you walk in. It’s different from many cafe shops. I’m not big on coffee so I can’t much about the Biscoff drink. (Btw the drink it’s called Biscoff cookie Einspanner). I only get it just cuz I wanna try…</p><div class="who">— Sophia</div></div><div class="q"><p>Ordered the Rosie Tonic. Taste is refreshing and mild flavor of rose without it tasting overly sweet. They are located behind the Pho-Ology building, facing Norwalk Blvd. Beautiful seating and pottery bowls and cups in…</p><div class="who">— Joanna C.</div></div><div class="q"><p>Warm woods and a piano-laden soundtrack welcome you into this beautifully crafted neighborhood coffee shop with a thoughtfully curated soft opening menu.  Highly recommend for both communal gatherings and solo study sessions.…</p><div class="who">— Tavish T.</div></div><div class="q"><p>I had the biscoff cookie einsplanner. I’m still sitting in the coffee shop. It’s up there with the best coffees I have ever had. I want to order another one to go but don’t want to appear glutinous to my new best friends (the…</p><div class="who">— Mike R.</div></div></div></div></section>
-
-<section class="section" id="visit"><div class="wrap">
-  <div class="kick">Find us</div>
-  <h2>Visit Favorite.</h2>
-  <div class="visit">
-    <div class="info">
-      <div class="contact-line"><a class="btn solid" href="tel:+15624565108">Call (562) 456-5108</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=5403+Norwalk+Blvd,+Whittier,+CA+90601,+USA" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="hrow"><span class="hd">Address</span><span class="ht">5403 Norwalk Blvd, Whittier, CA 90601, USA</span></div>
-      <div class="hrow"><span class="hd">Phone</span><span class="ht"><a href="tel:+15624565108">(562) 456-5108</a></span></div>
-      <div class="hrow"><span class="hd">Monday</span><span class="ht">6:30 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Tuesday</span><span class="ht">6:30 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Wednesday</span><span class="ht">6:30 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Thursday</span><span class="ht">6:30 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Friday</span><span class="ht">6:30 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Saturday</span><span class="ht">6:30 AM – 5:00 PM</span></div><div class="hrow"><span class="hd">Sunday</span><span class="ht">7:30 AM – 5:00 PM</span></div>
+<section class="feature"><div class="wrap">
+  <div class="top">
+    <div>
+      <h2>The room <em>is</em><br>the menu.</h2>
+      <div class="byline">— Notes from the Curator</div>
     </div>
-    <iframe loading="lazy" src="https://www.google.com/maps?q=5403+Norwalk+Blvd,+Whittier,+CA+90601,+USA&output=embed" title="Map to Favorite Coffee Museum"></iframe>
+    <div>
+      <div class="cols">
+        <p>Walk in and you'll catch the view first — not your phone, not the espresso bar, but the room itself. Warm woods. Soft daylight. A piano somewhere in the speakers, playing slowly enough that you might catch yourself slowing down with it.</p>
+        <p>The menu is intentionally short. The Biscoff Einspänner has its own following. The Rosie Tonic, refreshing and mildly floral, is the spring favorite. Order one, sit by the window, and stay through three songs at least.</p>
+        <p>It's a soft opening, which means you'll catch the place at its quietest — before the city catches on.</p>
+      </div>
+    </div>
   </div>
 </div></section>
 
-<footer><div class="wrap">
-  <div class="fbrand">Favorite Coffee Museum</div>
-  <div style="font-size:13px;opacity:.7;margin-top:4px">5403 Norwalk Blvd, Whittier, CA 90601, USA</div>
+<section class="exhibits"><div class="wrap">
+  <div class="lbl">— The Standing Collection —</div>
+  <h2>What's on the bar.</h2>
+  <div class="grid">
+    <div class="exhibit"><span class="tag">No. 01</span><h3>Biscoff Einspänner</h3><div class="price">$6.75</div><p>Espresso, whipped cream, a Biscoff cookie crown. The house favorite.</p></div>
+    <div class="exhibit"><span class="tag">No. 02</span><h3>Rosie Tonic</h3><div class="price">$6.25</div><p>Espresso, tonic, a whisper of rose. Mild, not sweet.</p></div>
+    <div class="exhibit"><span class="tag">No. 03</span><h3>Pour-Over of the Day</h3><div class="price">$5.50</div><p>Rotating single-origin. Ask the barista what's open.</p></div>
+    <div class="exhibit"><span class="tag">No. 04</span><h3>Matcha</h3><div class="price">$5.50</div><p>Ceremonial. Available iced, latte, or straight.</p></div>
+    <div class="exhibit"><span class="tag">No. 05</span><h3>Cortado</h3><div class="price">$4.50</div><p>Two shots, two ounces of milk. Quiet. Confident.</p></div>
+    <div class="exhibit"><span class="tag">No. 06</span><h3>House Drip</h3><div class="price">$3.50</div><p>Bottomless on weekday mornings before 9.</p></div>
+    <div class="exhibit"><span class="tag">No. 07</span><h3>Cold Brew</h3><div class="price">$5.00</div><p>16-hour steep. Smooth, low-acid, just bitter enough.</p></div>
+    <div class="exhibit"><span class="tag">No. 08</span><h3>Affogato</h3><div class="price">$6.00</div><p>One scoop, two shots, served the way it should be.</p></div>
+  </div>
+</div></section>
+
+<section class="letters"><div class="wrap">
+  <h2>Letters to the Editor.</h2>
+  <div class="sub">— What Whittier is writing about us —</div>
+  <div class="letterscol">
+    <div class="letter">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <h4>"Different from many cafes."</h4>
+      <p>I like the view when you walk in — it's different from many cafe shops. I'm not big on coffee but the Biscoff drink had me coming back the next day too.</p>
+      <div class="sign">— Sophia · Google review</div>
+    </div>
+    <div class="letter">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <h4>"Refreshing without being sweet."</h4>
+      <p>Ordered the Rosie Tonic. Refreshing, with a mild flavor of rose — without it tasting overly sweet. Located behind Pho-Ology, facing Norwalk. Easy to miss; worth finding.</p>
+      <div class="sign">— Joanna C. · Google review</div>
+    </div>
+    <div class="letter">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <h4>"Beautifully crafted."</h4>
+      <p>Warm woods and a piano-laden soundtrack welcome you into this beautifully crafted neighborhood coffee shop, with a thoughtfully curated soft-opening menu.</p>
+      <div class="sign">— Tavish T. · Google review</div>
+    </div>
+    <div class="letter">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <h4>"Best coffee I've ever had."</h4>
+      <p>I had the Biscoff cookie einspänner. I'm still sitting in the coffee shop — it's up there with the best coffees I have ever had. I want to order another.</p>
+      <div class="sign">— Mike R. · Google review</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="visit"><div class="wrap">
+  <div class="lbl">— Plan Your Visit —</div>
+  <h2>The particulars.</h2>
+  <div class="vgrid">
+    <div class="vcard">
+      <h3><em>Where</em>Address</h3>
+      <div class="body">5403 Norwalk Blvd<br>Whittier, CA 90601<br><b>Find Us</b>Behind Pho-Ology, facing Norwalk.</div>
+    </div>
+    <div class="vcard">
+      <h3><em>Telephone</em>By Voice</h3>
+      <div class="body"><a href="tel:+15624565108">(562) 456-5108</a><b>Best For</b>Catering questions, large orders, lost umbrellas.</div>
+    </div>
+    <div class="vcard">
+      <h3><em>Open Daily</em>Hours</h3>
+      <div class="body">Mon — Sat · 6:30 AM – 5:00 PM<br>Sunday · 7:30 AM – 5:00 PM<br><b>Best Time</b>Weekday mid-morning, before the rush.</div>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="b">FAVORITE COFFEE <em>MUSEUM</em></div>
+  <div class="lbl">— A neighborhood journal of slow brews —</div>
+  <div style="margin-top:18px;font-size:14px;color:#d6c79b">5403 Norwalk Blvd · Whittier, CA · <a href="tel:+15624565108">(562) 456-5108</a></div>
   <div class="credit">Mockup designed by LJ Sites — interested in making this yours? <a href="mailto:LJsites.llc@gmail.com">LJsites.llc@gmail.com</a></div>
-</div></footer>
+</footer>
+
 </body></html>
